@@ -1,0 +1,142 @@
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* File Input */
+  .file-input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f8f9fa;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .file-input:hover {
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  .buttons button {
+    margin: 5px;
+    padding: 12px 18px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Summary & Details Section */
+  .summary,
+  .details {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .summary h3,
+  .details h3 {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .summary table,
+  .details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .summary th,
+  .summary td,
+  .details th,
+  .details td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .summary th,
+  .details th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .summary tr:nth-child(even),
+  .details tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Map Container */
+  .map-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .map-container {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .buttons button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .map-container {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container {
+      height: 250px;
+    }
+  }
+  
